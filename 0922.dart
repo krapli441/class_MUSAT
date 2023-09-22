@@ -32,10 +32,32 @@ class Student {
   }
 }
 
-void main() {
+void third() {
   Student student1 = Student("홍길동", 25, 1);
   student1.introduce();
 
   Student student2 = Student("임꺽정", 27, 3);
   student2.introduce();
+}
+
+class DriveCar {
+  String model;
+  String carName;
+  int year;
+
+  DriveCar(this.model, this.carName, this.year);
+
+  void driveStart() {
+    print("$year년식 $model $carName 시동을 켰습니다.");
+  }
+
+  void driveStop() {
+    print("$year년식 $model $carName 시동을 껐습니다.");
+  }
+}
+
+void main() {
+  DriveCar driveCar = DriveCar("소나타", "현대", 2017);
+  driveCar.driveStart();
+  driveCar.driveStop();
 }
