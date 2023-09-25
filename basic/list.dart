@@ -8,6 +8,10 @@ void main() {
   print(rifle[2]);
   print(rifle[3]);
   print(rifle[4]);
+  rifle.add('MK12');
+  print(rifle);
+  rifle.remove('MK12');
+  print(rifle);
   List<int> number = [1, 2, 3, 4, 5, 6];
   print(number);
 }
