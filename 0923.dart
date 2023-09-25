@@ -1,8 +1,8 @@
 void main() {
-  // integer
-  // 정수
-  int number1 = 28;
-  int number2 = 336;
+  // double
+  // 실수
+  double number1 = 2.5;
+  double number2 = 3.5;
 
   print(number1 + number2);
 }
