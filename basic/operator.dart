@@ -15,4 +15,9 @@ void main() {
   print(doubleNumber);
   doubleNumber += 1; // 원하는 숫자만큼 더할 수 있다.
   print(doubleNumber);
+  print('-------------------------');
+  double? thirdNumber = 5.0;
+  thirdNumber = null;
+  thirdNumber ??= 3.0; // null이면 3.0으로 초기화
+  print(thirdNumber);
 }
