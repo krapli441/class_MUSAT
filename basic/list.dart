@@ -1,6 +1,8 @@
 void main() {
   // List
   // 리스트
+  // 자바스크립트의 배열(array)과 같구나.
+
   List<String> rifle = ['hk416', 'SCAR-L', 'M249', 'AKM', 'FN FAL'];
   print(rifle);
   print(rifle[0]);
