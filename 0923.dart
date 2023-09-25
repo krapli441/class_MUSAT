@@ -7,4 +7,8 @@ void main() {
   var name2 = 'musat';
 
   print(name2);
+
+  name = 'udt soldier';
+
+  print(name);
 }
