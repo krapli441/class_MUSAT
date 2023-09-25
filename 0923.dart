@@ -1,14 +1,11 @@
 void main() {
-  // variable, 변수
-  var name = 'ign';
+  // integer
+  // 정수
+  int number1 = 28;
 
-  print(name);
+  print(number1);
 
-  var name2 = 'musat';
+  int number2 = 336;
 
-  print(name2);
-
-  name = 'udt soldier';
-
-  print(name);
+  print(number2);
 }
