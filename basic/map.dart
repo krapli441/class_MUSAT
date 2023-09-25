@@ -8,6 +8,12 @@ void main() {
     'age': '30',
     'job': 'Hitman',
   };
-
   print(my);
+
+  my.addAll({'height': '174cm'});
+  print(my);
+
+  my.remove('height');
+  print(my);
+  print(my.keys);
 }
