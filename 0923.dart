@@ -1,3 +1,10 @@
 void main() {
-  print("hello worlds");
+  // variable, 변수
+  var name = 'ign';
+
+  print(name);
+
+  var name2 = 'musat';
+
+  print(name2);
 }
