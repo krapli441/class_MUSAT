@@ -6,11 +6,17 @@ void main() {
   blackpink.sayMembersCount();
   // blackpink.sayMail() // error
 
-  print('-----BTS-----');
+  print('-----Boy Group-----');
   BoiGroup bts = BoiGroup('bts', 7);
   bts.sayName();
   bts.sayMembersCount();
   bts.sayMale();
+
+  print('-----Girl Group-----');
+  GirlGroup redVelvet = GirlGroup('Red Velvel', 5);
+  redVelvet.sayName();
+  redVelvet.sayMembersCount();
+  redVelvet.sayFemale();
 }
 
 // 상속 inheritance
@@ -45,5 +51,14 @@ class BoiGroup extends Idol {
 
   void sayMale() {
     print('i am boi');
+  }
+}
+
+class GirlGroup extends Idol {
+  GirlGroup(String name, int membersCount)
+      : super(name: name, membersCount: membersCount);
+
+  void sayFemale() {
+    print('저는 여자 아이돌입니다');
   }
 }
