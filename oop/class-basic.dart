@@ -2,10 +2,14 @@ void main() {
   Idol blackPink = Idol('블랙핑크', ['지수', '제니', '로제', '리사']);
   print(blackPink.name);
   print(blackPink.members);
+  blackPink.sayHello();
+  blackPink.introduce();
 
-  Idol bts = Idol('bts', ['1', '2', '3', '4']);
+  Idol bts = Idol('bts', ['하나', '둘', '석삼', '너구리']);
   print(bts.name);
   print(bts.members);
+  bts.sayHello();
+  bts.introduce();
 }
 
 // Idol class
@@ -23,11 +27,11 @@ class Idol {
         this.members = members;
 
   void sayHello() {
-    print('안녕하세요 블랙핑크입니다.');
+    print('안녕하세요 $name 입니다.');
   }
 
   void introduce() {
-    print('저희 멤버는 일,이,삼,사 있습니다.');
+    print('저희 멤버는 $members 있습니다.');
   }
 }
 
