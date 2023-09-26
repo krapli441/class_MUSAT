@@ -23,11 +23,11 @@ void main() {
 // introduce 소개
 // constructor 생성자
 class Idol {
-  String name;
-  List<String> members;
+  final String name;
+  final List<String> members;
 
   // constructor
-  Idol(this.name, this.members);
+  const Idol(this.name, this.members);
 
   // named constructor
   Idol.fromList(List values)
