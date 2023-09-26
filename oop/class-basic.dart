@@ -22,16 +22,15 @@ class Idol {
   String name;
   List<String> members;
 
-  Idol(String name, List<String> members)
-      : this.name = name,
-        this.members = members;
+  // constructor
+  Idol(this.name, this.members);
 
   void sayHello() {
-    print('안녕하세요 $name 입니다.');
+    print('안녕하세요 ${this.name} 입니다.');
   }
 
   void introduce() {
-    print('저희 멤버는 $members 있습니다.');
+    print('저희 멤버는 ${this.members}입니다.');
   }
 }
 
