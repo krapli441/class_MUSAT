@@ -1,10 +1,11 @@
 void main() {
-  Idol blackPink = Idol();
-
+  Idol blackPink = Idol('블랙핑크', ['지수', '제니', '로제', '리사']);
   print(blackPink.name);
   print(blackPink.members);
-  blackPink.sayHello();
-  blackPink.introduce();
+
+  Idol bts = Idol('bts', ['1', '2', '3', '4']);
+  print(bts.name);
+  print(bts.members);
 }
 
 // Idol class
@@ -12,9 +13,14 @@ void main() {
 // members 멤버
 // sayHello 인사
 // introduce 소개
+// constructor 생성자
 class Idol {
-  String name = "BLACK PINK";
-  List<String> members = ['일', '이', '삼', '사'];
+  String name;
+  List<String> members;
+
+  Idol(String name, List<String> members)
+      : this.name = name,
+        this.members = members;
 
   void sayHello() {
     print('안녕하세요 블랙핑크입니다.');
