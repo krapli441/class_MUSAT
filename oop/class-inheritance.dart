@@ -17,12 +17,17 @@ void main() {
   redVelvet.sayName();
   redVelvet.sayMembersCount();
   redVelvet.sayFemale();
+
+  print('----type comparison----');
+  print(blackpink is GirlGroup);
+  print(bts is GirlGroup);
 }
 
 // 상속 inheritance
 // 상속을 받으면 부모 클래스의 모든 속성을
 // 자식 클래스가 부여받는다.
 // 자식 클래스에서 부모 클래스로 속성을 부여하는 일은 절대 없다.
+// 마찬가지로 자식 클래스에서 자식 클래스에게 속성을 부여하는 일도 없다.
 
 class Idol {
   String name;
